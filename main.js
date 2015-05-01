@@ -36,7 +36,7 @@ define(function (require, exports, module) {
 
     var MY_COMMAND_ID = 'dag0310.tab-out';
 
-    CommandManager.register('Tab Out', MY_COMMAND_ID, tabOutIfPossible);
+    CommandManager.registerInternal(MY_COMMAND_ID, tabOutIfPossible);
 
     KeyBindingManager.addBinding(MY_COMMAND_ID, 'Tab');
 });
