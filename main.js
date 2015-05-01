@@ -14,6 +14,9 @@ define(function (require, exports, module) {
         var currentCursorPosition = editor.getCursorPos();
         var nextCursorPosition = {line: currentCursorPosition.line, ch: currentCursorPosition.ch + 1}
 
+        if (editor.getSelectedText() !== '')
+            return true;
+
         var nextCharacter = editor.document.getRange(currentCursorPosition, nextCursorPosition);
         var closingCharacters = ['"', "'", ')', ']', '}'];
         var nextCharacterIsNotClosingCharacter = closingCharacters.indexOf(nextCharacter) === -1;
