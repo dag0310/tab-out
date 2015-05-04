@@ -4,7 +4,7 @@
     "description": "Use the Tab key to jump out of nested elements surrounded by characters \", ', ), ] or } like in Eclipse.",
     "keywords": ["tab", "key", "jump", "out", "leave", "brackets", "parenthesis", "braces", "eclipse", "editor", "closing", "character", "char", "\"", "'", ")", "]", "}"],
     "homepage": "https://github.com/dag0310/tab-out",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Daniel Geymayer",
         "url": "https://github.com/dag0310/tab-out",
