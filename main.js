@@ -64,7 +64,7 @@ define(function (require, exports, module) {
         
         setKeyBinding(_prefs.get(ALT_KEY_BINDING_ENABLED_PREFERENCE));
         
-        brackets.getModule('utils/Dialogs').showModalDialog('', 'Please restart Brackets', "Tab Out's and other plugins' affected keyboard shortcuts fully functional after restart of Brackets!");
+        brackets.getModule('widgets/Dialogs').showModalDialog('', 'Please restart Brackets', "Tab Out's and other plugins' affected keyboard shortcuts fully functional after restart of Brackets!");
     }
     
     CommandManager.registerInternal(TAB_OUT_COMMAND, tabOutIfPossible);
