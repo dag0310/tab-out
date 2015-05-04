@@ -1,7 +1,7 @@
 # Tab Out
-[Brackets](http://brackets.io) extension which allows the user to use the Tab key to jump out of groupings after closing characters ", ', ), ] and } like in Eclipse.
+[Brackets](http://brackets.io) extension which allows the user to use the Tab key to jump out of nested elements surrounded by characters ", ', ), ] or } like in Eclipse.
 
-WARNING: Does not work together with other plugins which make use of the Tab key (e.g. Emmet). You could re-map the key binding of the other plugin though.
+WARNING: Does not work together with other plugins which make use of the Tab key (e.g. Emmet). You could re-map the key binding of the other plugin though. Or -- if you have a Mac -- you can change the key binding to Alt+Tab under "Navigation".
 
 # Usage
 After installing the plugin, try typing the following JavaScript line in Brackets and use the Tab key to leave the strings, objects and array definitions:

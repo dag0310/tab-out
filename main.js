@@ -1,4 +1,4 @@
-/** Use the Tab key to jump out of groupings after closing characters ", ', ), ] and } like in Eclipse. */
+/** Use the Tab key to jump out of nested elements surrounded by characters ", ', ), ] or } like in Eclipse. */
 define(function (require, exports, module) {
     'use strict';
     

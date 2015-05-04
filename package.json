@@ -1,7 +1,7 @@
 {
     "name": "dag0310.tab-out",
     "title": "Tab Out",
-    "description": "Use the Tab key to jump out of groupings after closing characters \", ', ), ] and } like in Eclipse.",
+    "description": "Use the Tab key to jump out of nested elements surrounded by characters \", ', ), ] or } like in Eclipse.",
     "keywords": ["tab", "key", "jump", "out", "leave", "brackets", "parenthesis", "braces", "eclipse", "editor", "closing", "character", "char", "\"", "'", ")", "]", "}"],
     "homepage": "https://github.com/dag0310/tab-out",
     "version": "1.0.0",
