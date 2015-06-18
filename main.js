@@ -21,7 +21,7 @@ define(function (require, exports, module) {
     function tabOutIfPossible() {
         var editor = EditorManager.getFocusedEditor();
         if (! editor)
-            return;
+            return true;
         
         var currentCursorPosition = editor.getCursorPos();
         var nextCursorPosition = {line: currentCursorPosition.line, ch: currentCursorPosition.ch + 1}
