@@ -20,25 +20,29 @@ define(function (require, exports, module) {
 
   function tabOutIfPossible() {
     var editor = EditorManager.getFocusedEditor();
-    if (! editor)
+    if (! editor) {
       return true;
+    }
 
     var currentCursorPosition = editor.getCursorPos();
     var nextCursorPosition = {line: currentCursorPosition.line, ch: currentCursorPosition.ch + 1};
 
-    if (editor.getSelectedText() !== '')
+    if (editor.getSelectedText() !== '') {
       return true;
+    }
 
     var nextCharacter = editor.document.getRange(currentCursorPosition, nextCursorPosition);
     var nextCharacterIsClosingCharacter = /[^\w\s]/.test(nextCharacter);
-    if (!nextCharacterIsClosingCharacter)
+    if (!nextCharacterIsClosingCharacter) {
       return true;
+    }
 
     var beginningOfLinePosition = {line: currentCursorPosition.line, ch: 0};
     var textInLineBeforeCursor = editor.document.getRange(beginningOfLinePosition, currentCursorPosition);
     var hasOnlyWhitespaceToTheLeft = textInLineBeforeCursor.trim() === '';
-    if (hasOnlyWhitespaceToTheLeft)
+    if (hasOnlyWhitespaceToTheLeft) {
       return true;
+    }
 
     editor.setCursorPos(nextCursorPosition);
 
