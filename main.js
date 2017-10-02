@@ -1,4 +1,4 @@
-/** Use the Tab key to skip any closing characters like ", ', ), ], }, >, `, and so on. */
+/** Use the Tab key to skip any character. */
 define(function (require, exports, module) {
   'use strict';
 
@@ -28,12 +28,6 @@ define(function (require, exports, module) {
     var nextCursorPosition = {line: currentCursorPosition.line, ch: currentCursorPosition.ch + 1};
 
     if (editor.getSelectedText() !== '') {
-      return true;
-    }
-
-    var nextCharacter = editor.document.getRange(currentCursorPosition, nextCursorPosition);
-    var nextCharacterIsClosingCharacter = /[^\w\s]/.test(nextCharacter);
-    if (!nextCharacterIsClosingCharacter) {
       return true;
     }
 

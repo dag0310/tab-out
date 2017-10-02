@@ -1,7 +1,7 @@
 {
   "name": "dag0310.tab-out",
   "title": "Tab Out",
-  "description": "Use the Tab key to skip any closing characters like \", ', ), ], }, >, `, and so on.",
+  "description": "Use the Tab key to skip any character.",
   "keywords": ["press", "tab", "key", "jump out", "skip", "leave", "brackets", "parentheses", "braces", "eclipse", "editor", "closing", "character", "char", "\"", "'", ")", "]", "}", ">", "`"],
   "homepage": "https://github.com/dag0310/tab-out",
   "version": "1.2.0",
