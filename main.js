@@ -7,7 +7,7 @@ define(function (require, exports, module) {
   var TOGGLE_COMMAND = EXTENSION_NAME + '.toggle';
   var DEFAULT_KEY_BINDING = 'Tab';
   var ALT_KEY_BINDING = 'Alt-Tab';
-  var ALT_KEY_BINDING_ENABLED_PREFERENCE = 'altKeyEnabled'
+  var ALT_KEY_BINDING_ENABLED_PREFERENCE = 'altKeyEnabled';
 
   var CommandManager = brackets.getModule('command/CommandManager');
   var KeyBindingManager = brackets.getModule('command/KeyBindingManager');
@@ -24,7 +24,7 @@ define(function (require, exports, module) {
       return true;
 
     var currentCursorPosition = editor.getCursorPos();
-    var nextCursorPosition = {line: currentCursorPosition.line, ch: currentCursorPosition.ch + 1}
+    var nextCursorPosition = {line: currentCursorPosition.line, ch: currentCursorPosition.ch + 1};
 
     if (editor.getSelectedText() !== '')
       return true;
