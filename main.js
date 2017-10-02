@@ -1,4 +1,4 @@
-/** Use the Tab key to leave closing characters ", ', ), ], }, >, ` like in Eclipse. */
+/** Use the Tab key to skip any closing characters like ", ', ), ], }, >, `, and so on. */
 define(function (require, exports, module) {
     'use strict';
     
@@ -30,9 +30,8 @@ define(function (require, exports, module) {
             return true;
         
         var nextCharacter = editor.document.getRange(currentCursorPosition, nextCursorPosition);
-        var closingCharacters = ['"', "'", ')', ']', '}', '>', '`'];
-        var nextCharacterIsNotClosingCharacter = closingCharacters.indexOf(nextCharacter) === -1;
-        if (nextCharacterIsNotClosingCharacter)
+        var nextCharacterIsClosingCharacter = /[^\w\s]/.test(nextCharacter);
+        if (!nextCharacterIsClosingCharacter)
             return true;
         
         var beginningOfLinePosition = {line: currentCursorPosition.line, ch: 0};
