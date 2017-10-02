@@ -1,4 +1,4 @@
-/** Use the Tab key to leave closing characters ", ', ), ], }, > like in Eclipse. */
+/** Use the Tab key to leave closing characters ", ', ), ], }, >, ` like in Eclipse. */
 define(function (require, exports, module) {
     'use strict';
     
@@ -30,7 +30,7 @@ define(function (require, exports, module) {
             return true;
         
         var nextCharacter = editor.document.getRange(currentCursorPosition, nextCursorPosition);
-        var closingCharacters = ['"', "'", ')', ']', '}', '>'];
+        var closingCharacters = ['"', "'", ')', ']', '}', '>', '`'];
         var nextCharacterIsNotClosingCharacter = closingCharacters.indexOf(nextCharacter) === -1;
         if (nextCharacterIsNotClosingCharacter)
             return true;

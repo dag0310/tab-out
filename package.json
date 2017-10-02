@@ -1,8 +1,8 @@
 {
     "name": "dag0310.tab-out",
     "title": "Tab Out",
-    "description": "Use the Tab key to leave closing characters \", ', ), ], }, > like in Eclipse.",
-    "keywords": ["press", "tab", "key", "jump out", "leave", "brackets", "parentheses", "braces", "eclipse", "editor", "closing", "character", "char", "\"", "'", ")", "]", "}"],
+    "description": "Use the Tab key to leave closing characters \", ', ), ], }, >, ` like in Eclipse.",
+    "keywords": ["press", "tab", "key", "jump out", "leave", "brackets", "parentheses", "braces", "eclipse", "editor", "closing", "character", "char", "\"", "'", ")", "]", "}", "`"],
     "homepage": "https://github.com/dag0310/tab-out",
     "version": "1.1.0",
     "author": {

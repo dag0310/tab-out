@@ -1,5 +1,5 @@
 # Tab Out
-[Brackets](http://brackets.io) extension which allows you to use the Tab key to leave closing characters ", ', ), ], }, > like in Eclipse.
+[Brackets](http://brackets.io) extension which allows you to use the Tab key to leave closing characters ", ', ), ], }, >, \` like in Eclipse.
 
 WARNING: Does not work together with other plugins which make use of the Tab key (e.g. Emmet). You could re-map the key binding of the other plugin though. Or -- if you have a Mac -- you can change the key binding to Alt+Tab under "Navigation".
 
