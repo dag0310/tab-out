@@ -1,4 +1,10 @@
 # Tab Out
+
+[![Downloads](https://badges.ml/dag0310.tab-out/total.svg)](https://brackets-extension-badges.github.io#dag0310.tab-out)
+[![Downloads](https://badges.ml/dag0310.tab-out/last-version.svg)](https://brackets-extension-badges.github.io#dag0310.tab-out)
+[![Downloads](https://badges.ml/dag0310.tab-out/week.svg)](https://brackets-extension-badges.github.io#dag0310.tab-out)
+[![Downloads](https://badges.ml/dag0310.tab-out/day.svg)](https://brackets-extension-badges.github.io#dag0310.tab-out)
+
 [Brackets](http://brackets.io) extension which allows you to use the Tab key to skip any character.
 
 **WARNING**: Does not work together with other plugins which make use of the Tab key (e.g. Emmet). You could re-map the key binding of the other plugin though. Or -- if you have a Mac -- you can change the key binding to Alt+Tab under "Navigation".
